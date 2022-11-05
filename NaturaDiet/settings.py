@@ -81,11 +81,11 @@ WSGI_APPLICATION = 'NaturaDiet.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'NATURADIET1',
-        'USER': 'usuario',
-        'PASSWORD': 'usuario',
-        'HOST': 'localhost',
-        'PORT': 3306,
+        'NAME': 'railway',
+        'USER': 'root',
+        'PASSWORD': 'KRibw2KaH5Iv9SyI1yyC',
+        'HOST': 'containers-us-west-42.railway.app',
+        'PORT': 5746,
     }
 }
 
