@@ -1,1 +1,1 @@
-web: gunicorn NaturaDiet.wsgi --log-file -
+web: python manage.py migrate && gunicorn NaturaDiet.wsgi
