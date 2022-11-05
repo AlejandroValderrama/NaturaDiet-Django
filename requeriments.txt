@@ -1,4 +1,5 @@
 apturl==0.5.2
+asgiref==3.5.2
 bcrypt==3.1.7
 blinker==1.4
 Brlapi==0.7.0
@@ -13,7 +14,7 @@ dbus-python==1.2.16
 defer==1.0.6
 distro==1.4.0
 distro-info===0.23ubuntu1
-Django==2.2.12
+Django==4.0.4
 django-ckeditor==6.1.0
 django-crispy-forms==1.11.2
 django-js-asset==1.2.2
@@ -44,6 +45,7 @@ paramiko==2.6.0
 pexpect==4.6.0
 Pillow==7.0.0
 protobuf==3.6.1
+psycopg2==2.8.6
 pycairo==1.16.2
 pycups==1.9.73
 PyGObject==3.36.0
@@ -63,7 +65,7 @@ requests-unixsocket==0.2.0
 SecretStorage==2.3.1
 simplejson==3.16.0
 six==1.14.0
-sqlparse==0.2.4
+sqlparse==0.4.2
 systemd-python==234
 ubuntu-advantage-tools==20.3
 ubuntu-drivers-common==0.0.0
