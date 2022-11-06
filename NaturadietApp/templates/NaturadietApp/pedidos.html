@@ -54,7 +54,7 @@
 
                                                     <!-- ======= Fecha Pedido ======= -->
                                                     <li class="nav-item">
-                                                        <div id="fecha" class="text-dark align-middle ">{{ pedido.fecha | date:"d M, Y"}}</div>
+                                                        <div class="text-dark align-middle ">{{ pedido.fecha | date:"d M, Y"}}</div>
                                                     </li>
 
                                                     <!-- ======= Icono Entrega ======= -->
@@ -72,30 +72,32 @@
                                 
                                     <div id="collapse{{ pedido.id_pedido }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            <table class="table table-borderless">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Producto</th>
-                                                        <th class="text-center" scope="col">Cantidad</th>
-                                                        <th class="text-right" scope="col">Importe</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {% for factura in facturas %}
-                                                    <tr>
-                                                    <td >{{ factura.producto }}</td>
-                                                    <td class="text-center">{{ factura.cantidad}}</td>
-                                                    <td class="text-right">{{ factura.importe}} €</td>
-                                                    </tr>
-                                                    {% endfor %}
-                                                </tbody>
-                                                <tfoot>
-                                                    <tr>
-                                                        <td class="border-top border-success text-right" colspan="2">TOTAL:</td>
-                                                        <td class="border-top border-success text-right table-success" > {{ pedido.total}} €</td>
-                                                    </tr>
-                                                </tfoot>
-                                            </table>
+                                            <div class="table-responsive">
+                                                <table class="table table-borderless">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Producto</th>
+                                                            <th class="text-center" scope="col">Cantidad</th>
+                                                            <th class="text-right" scope="col">Importe</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {% for factura in facturas %}
+                                                        <tr>
+                                                        <td >{{ factura.producto }}</td>
+                                                        <td class="text-center">{{ factura.cantidad}}</td>
+                                                        <td class="text-right">{{ factura.importe}} €</td>
+                                                        </tr>
+                                                        {% endfor %}
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td class="border-top border-success text-right" colspan="2">TOTAL:</td>
+                                                            <td class="border-top border-success text-right table-success" > {{ pedido.total}} €</td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

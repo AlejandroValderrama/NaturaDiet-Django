@@ -65,56 +65,58 @@
                         <div class="card mt-4" >
                             <div class="card-body">
                                 <h5 class="card-title">{{ usuario.username }}</h5>
-                                <table class="table table-borderless">
-                                    <tbody>
-                                        <tr class="d-flex">
-                                            <th class="col-3">Nombre</th>
-                                            <td>{{ usuario.first_name }} {{ usuario.last_name }}</td>
-                                        </tr>
-                                        <tr class="d-flex">
-                                            <th class="col-3">Email</th>
-                                            <td>{{ usuario.email }}</td>
-                                        </tr>
-                                        <tr class="d-flex">
-                                            <th class="col-3">Edad</th>
-                                            <td>{{ usuario.edad }}</td>
-                                        </tr>
-                                        <tr class="d-flex">
-                                            <th class="col-3">DNI</th>
-                                            <td>{{ usuario.dni }}</td>
-                                        </tr>
-                                        <tr class="d-flex">
-                                            <th class="col-3">Tlf</th>
-                                            <td>{{ usuario.telefono }}</td>
-                                        </tr>
-                                        <tr class="d-flex">
-                                            <th class="col-3">Dirección</th>
-                                            <td>{{ usuario.provincia }}, {{ usuario.localidad }}, {{ usuario.cp }}, {{ usuario.direccion }}</td>
-                                        </tr>
-                                        <tr class="d-flex">
-                                            <th class="col-3">Altura</th>
-                                            <td>{{ usuario.altura }}</td>
-                                        </tr>
-                                        <tr class="d-flex">
-                                            <th class="col-3">Peso</th>
-                                            <td>{{ usuario.peso }}</td>
-                                        </tr>
-                                        <tr class="d-flex">
-                                            <th class="col-3">Género</th>
-                                            <td>{{ usuario.genero }}</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td class="text-right">
-                                                <a class="ml-4 boton" href="{% url 'Actualizar' %}">Actualizar</a>
-                                                <!-- ===== Modal ===== -->
-                                                <a class="boton-rojo ml-3" data-toggle="modal" data-target="#staticBackdrop">Eliminar</a>
-                                            </td>
-                                            
-                                        </tr>
-                                    </tfoot>
-                                </table>
+                                <div class="table-responsive">
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr class="d-flex">
+                                                <th class="col-3">Nombre</th>
+                                                <td>{{ usuario.first_name }} {{ usuario.last_name }}</td>
+                                            </tr>
+                                            <tr class="d-flex">
+                                                <th class="col-3">Email</th>
+                                                <td>{{ usuario.email }}</td>
+                                            </tr>
+                                            <tr class="d-flex">
+                                                <th class="col-3">Edad</th>
+                                                <td>{{ usuario.edad }}</td>
+                                            </tr>
+                                            <tr class="d-flex">
+                                                <th class="col-3">DNI</th>
+                                                <td>{{ usuario.dni }}</td>
+                                            </tr>
+                                            <tr class="d-flex">
+                                                <th class="col-3">Tlf</th>
+                                                <td>{{ usuario.telefono }}</td>
+                                            </tr>
+                                            <tr class="d-flex">
+                                                <th class="col-3">Dirección</th>
+                                                <td>{{ usuario.provincia }}, {{ usuario.localidad }}, {{ usuario.cp }}, {{ usuario.direccion }}</td>
+                                            </tr>
+                                            <tr class="d-flex">
+                                                <th class="col-3">Altura</th>
+                                                <td>{{ usuario.altura }}</td>
+                                            </tr>
+                                            <tr class="d-flex">
+                                                <th class="col-3">Peso</th>
+                                                <td>{{ usuario.peso }}</td>
+                                            </tr>
+                                            <tr class="d-flex">
+                                                <th class="col-3">Género</th>
+                                                <td>{{ usuario.genero }}</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td class="text-right">
+                                                    <a class="ml-4 boton" href="{% url 'Actualizar' %}">Actualizar</a>
+                                                    <!-- ===== Modal ===== -->
+                                                    <a class="boton-rojo ml-3" data-toggle="modal" data-target="#staticBackdrop">Eliminar</a>
+                                                </td>
+                                                
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
