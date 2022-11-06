@@ -179,31 +179,33 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-.nav-menu .get-started a:not(.drop) {
-  background: #94c045;
-  color: #fff;
-  border-radius: 50px;
-  margin: 0 15px;
-  padding: 10px 25px;
-}
-
-.nav-menu .get-started a:hover {
-  background: #a6ca63;
-  color: #fff;
-}
-
-.nav-menu .registrar a {
-  color: #94c045;
-  border-radius: 50px;
-  margin: 0 ;
-  transition: 0.5s;
-  padding: 8px 23px;
-  border: 2px solid #94c045;
-}
-
-.nav-menu .registrar a:hover {
-  background: #94c045;
-  color: #fff;
+@media only screen and (min-width: 992px) {
+  .nav-menu .get-started a:not(.drop) {
+    background: #94c045;
+    color: #fff;
+    border-radius: 50px;
+    margin: 0 15px;
+    padding: 10px 25px;
+  }
+  
+  .nav-menu .get-started a:hover {
+    background: #a6ca63;
+    color: #fff;
+  }
+  
+  .nav-menu .registrar a {
+    color: #94c045;
+    border-radius: 50px;
+    margin: 0 ;
+    transition: 0.5s;
+    padding: 8px 23px;
+    border: 2px solid #94c045;
+  }
+  
+  .nav-menu .registrar a:hover {
+    background: #94c045;
+    color: #fff;
+  }
 }
 
 .nav-menu .carrito a {
