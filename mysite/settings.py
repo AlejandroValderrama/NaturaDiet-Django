@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'railway',
-        'USER': 'root',
-        'PASSWORD': 'KRibw2KaH5Iv9SyI1yyC',
-        'HOST': 'containers-us-west-42.railway.app',
-        'PORT': 5746,
+        'NAME': os.environ["MYSQLDATABASE"],
+        'USER': os.environ["MYSQLUSER"],
+        'PASSWORD': os.environ["MYSQLPASSWORD"],
+        'HOST': os.environ["MYSQLHOST"],
+        'PORT': os.environ["MYSQLPORT"],
     }
 }
 
