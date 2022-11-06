@@ -161,4 +161,4 @@ EMAIL_HOST_PASSWORD = "julio-verne"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://naturadiet-django-production.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://*.naturadiet-django-production.up.railway.app/', 'https://*.127.0.0.1']
