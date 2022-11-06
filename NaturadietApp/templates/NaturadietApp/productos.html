@@ -41,10 +41,10 @@
 
 
 			<!-- ======= Categorias Productos ======= -->
-			<div class="row justify-content-center categoria">
-				<div class="col-lg-8 col-md-6 d-flex justify-content-around">
+			<div class="d-flex justify-content-center align-items-center categoria">
+				<div>
 					{% for categoria in categorias %}
-						<a class="btn btn-outline-secondary" href="{% url 'CategoriaProducto' categoria.nombre %}" role="button">{{ categoria.nombre }}</a>
+						<a class="btn btn-outline-secondary mb-2" href="{% url 'CategoriaProducto' categoria.nombre %}" role="button">{{ categoria.nombre }}</a>
 					{% endfor %}
 				</div>
 			</div>

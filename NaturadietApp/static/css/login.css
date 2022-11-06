@@ -24,7 +24,7 @@ body {
 
 
 .text-wrap, .login-wrap {
-  width: 50%;
+  min-width: 50%;
 }
 
 .text-wrap {

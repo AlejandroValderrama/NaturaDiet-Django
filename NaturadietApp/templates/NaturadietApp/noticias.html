@@ -22,10 +22,10 @@
 
 
     <!-- ======= Categorias Noticias ======= -->
-    <div class="row justify-content-center categoria">
-		<div class="col-lg-8 col-md-6 d-flex justify-content-center">
+    <div class="d-flex justify-content-around align-items-center categoria">
+		<div>
 			{% for categoria in categorias %}
-				<a class="btn btn-outline-secondary mr-3 ml-3" href="{% url 'Categoria' categoria.nombre %}" role="button">{{ categoria.nombre }}</a>
+				<a class="btn btn-outline-secondary mb-2 mr-3 ml-3" href="{% url 'Categoria' categoria.nombre %}" role="button">{{ categoria.nombre }}</a>
 			{% endfor %}
 		</div>
     </div>
