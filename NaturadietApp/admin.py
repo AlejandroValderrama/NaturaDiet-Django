@@ -45,7 +45,7 @@ class NoticiaAdmin(admin.ModelAdmin):
     list_display=("id_noticia", "titulo", "usuario")
 
 class ProductoAdmin(admin.ModelAdmin):
-    list_display=("id_producto", "nombre", "descripcion", "categoria", "precio", "disponibilidad")
+    list_display=("id_producto", "nombre", "categoria", "precio", "disponibilidad")
 
 class CategoriaAdmin(admin.ModelAdmin):
     list_display=("id_categoria", "nombre")
